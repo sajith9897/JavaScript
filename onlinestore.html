@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+</head>
+<body>
+    
+    <p id="total"></p>
+    <p id="updatedtotal"></p>
+
+    <script language = "javascript" type = "text/javascript">
+        var tshirt = 5;
+        var cap = 3;
+
+        var tshirtprice = 400;
+        var capprice = 150;
+
+        var total = (tshirt*tshirtprice) + (cap*capprice);
+        document.getElementById("total").innerHTML = ("Total earnings = " + total)
+
+        tshirtprice = 450;
+
+        var updatedtotal = (tshirt*tshirtprice) + (cap*capprice);
+        document.getElementById("updatedtotal").innerHTML = (" Updated Total Earnings = " + updatedtotal)
+
+        
+        
+
+
+
+    </script>
+</body>
+</html>
