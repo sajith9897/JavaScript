@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+<body>
+    <p id="paragraph">Hello World</p>
+    <h1 id="heading"></h1>
+
+    <script>
+        function name() {
+            console.log(document.getElementById("paragraph").innerHTML);
+            document.getElementById("heading").innerHTML = document.getElementById("paragraph").innerHTML;
+
+        }
+
+        name()
+        </script>
+</body>
+</html>
