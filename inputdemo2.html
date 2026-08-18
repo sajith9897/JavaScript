@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name1">
+
+    <button onclick="display()">submit</button>
+    <p id="paragraph"></p>
+
+    <script>
+        function display() {
+          var demo = document.getElementById("name").value;
+          var democ = document.getElementById("name1").value;
+            
+          var final = demo.indexOf(democ);
+          document.getElementById("paragraph").innerHTML = final; 
+        } 
+        
+    </script>
+</body>
+</html>
