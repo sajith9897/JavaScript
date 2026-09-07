@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Color</title>
+</head>
+
+<body>
+
+    <form id="myForm">
+
+        <input type="text" id="inputText">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <p id="display"></p>
+
+
+    <script>
+
+        let form = document.getElementById("myForm");
+        let input = document.getElementById("inputText");
+        let display = document.getElementById("display");
+
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            display.innerHTML = input.value;
+
+            display.style.color = "blue";
+
+        });
+
+
+        display.addEventListener("mouseover", function() {
+
+            display.style.color = "green";
+
+        });
+
+
+        display.addEventListener("mouseout", function() {
+
+            display.style.color = "blue";
+
+        });
+
+    </script>
+
+</body>
+</html>
