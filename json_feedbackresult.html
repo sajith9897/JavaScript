@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+</head>
+
+<body>
+    <p id="display"></p>
+
+    <script>
+
+        let txt = `{
+            "name": "Akhil",
+            "feedback": "Thank you for the wonderful service"
+        }`;
+
+        let checkFeedback = (feedback) => {
+
+            if (/thank/i.test(feedback)) {
+                return "Positive feedback received";
+            }
+            else {
+                return "Feedback noted";
+            }
+
+        };
+
+        try {
+
+            let user = JSON.parse(txt);
+
+            let result = checkFeedback(user.feedback);
+
+            document.getElementById("display").innerHTML = result;
+
+        }
+        catch (err) {
+
+            document.getElementById("display").innerHTML =
+                "Error: Invalid JSON";
+
+        }
+
+    </script>
+
+</body>
+</html>

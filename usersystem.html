@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User System</title>
+</head>
+<body>
+    <p id="display"></p>
+
+    <script>
+
+        class User {
+
+            constructor(name, age, email) {
+                this.name = name;
+                this.age = age;
+                this.email = email;
+            }
+
+            get getName() {
+                return this.name;
+            }
+
+            get getAge() {
+                return this.age;
+            }
+
+        
+            set setEmail(newEmail) {
+                if (newEmail.includes("@")) {
+                    this.email = newEmail;
+                }
+                else {
+                    this.email = this.email;
+                }
+            }
+
+            get getEmail() {
+                return this.email;
+            }
+        }
+
+
+        let user1 = new User(
+            "Akhil",
+            25,
+            "akhil@gmail.com"
+        );
+
+
+        // Correct email
+        user1.setEmail = "akhil123@gmail.com";
+
+        // Incorrect email
+        user1.setEmail = "akhil123gmail.com";
+
+
+        document.getElementById("display").innerHTML =
+            "Name: " + user1.getName + "<br>" +
+            "Age: " + user1.getAge + "<br>" +
+            "Email: " + user1.getEmail;
+
+    </script>
+
+</body>
+</html>

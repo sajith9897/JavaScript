@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grocery Calculator</title>
+</head>
+<body>
+    <script>
+        var item1 = "Rice";
+        var item2 = "Sugar";
+        var item3 = "Wheat";
+
+        var riceQuantity = 5;
+        var sugarQuantity = 6;
+        var wheatQuantity = 2;
+
+        var ricePrice = 30;
+        var sugarPrice = 15;
+        var wheatPrice = 60;
+
+        var riceCost = ricePrice * riceQuantity;
+        var sugarCost = sugarPrice * sugarQuantity;
+        var wheatCost = wheatPrice * wheatQuantity;
+
+        var totalAmount = (riceCost + sugarCost + wheatCost);
+
+        console.log ("Item1 =",item1);
+        console.log ("Quantity =", riceQuantity);
+        console.log ("Price =", ricePrice);
+        console.log ("Cost =", riceCost);
+        console.log ("-------------------")
+
+        console.log ("Item1 =",item2);
+        console.log ("Quantity =", sugarQuantity);
+        console.log ("Price =", sugarPrice);
+        console.log ("Cost =", sugarCost);
+        console.log ("-------------------")
+
+        console.log ("Item1 =",item3);
+        console.log ("Quantity =", wheatQuantity);
+        console.log ("Price =", wheatPrice);
+        console.log ("Cost =", wheatCost);
+        console.log ("-------------------")
+
+        console.log ("Total Amount =", totalAmount);
+
+        wheatQuantity = 4;
+        wheatCost = wheatPrice * wheatQuantity;
+        totalAmount = (riceCost + sugarCost + wheatCost);
+
+
+        console.log ("Updated Wheat Quantity =", wheatQuantity);
+        console.log ("Updated Total Amount =", totalAmount);
+        
+    </script>
+</body>
+</html>

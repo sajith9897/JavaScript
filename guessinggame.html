@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guessing Game</title>
+</head>
+
+<body>
+
+    <h2>Guess the Number</h2>
+
+    <script>
+
+        let chances = 0;
+
+        for (let i = 1; i <= 5; i++) {
+
+            let number = Number(prompt("Enter a number between 1 and 5:"));
+
+            // Check invalid input
+            if (number < 1 || number > 5) {
+                console.log("Invalid input");
+                i--;              // Don't count invalid input as a chance
+                continue;
+            }
+
+            chances++;
+
+            // Switch to display number in words
+            switch (number) {
+
+                case 1:
+                    console.log("You entered: One");
+                    break;
+
+                case 2:
+                    console.log("You entered: Two");
+                    break;
+
+                case 3:
+                    console.log("You entered: Three");
+                    break;
+
+                case 4:
+                    console.log("You entered: Four");
+                    break;
+
+                case 5:
+                    console.log("You entered: Five");
+                    break;
+            }
+
+            // Check the guess
+            if (number === 3) {
+                console.log("You guessed it right!");
+                break;
+            } 
+            else {
+                console.log("Wrong guess. Try again.");
+            }
+        }
+
+        // Game over if player used 5 valid chances
+        if (chances === 5) {
+            console.log("Game over");
+        }
+
+    </script>
+
+</body>
+</html>

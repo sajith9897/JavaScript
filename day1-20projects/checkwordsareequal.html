@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the letters of words are equal or not</title>
+</head>
+<body>
+    <script>
+        let word1= "hello";
+        let word2= "lhelo";
+
+        // let arr= word1.split("");
+        // let arr2= word2.split("");
+
+        // let text1= arr.sort();
+        // let text2 =arr2.sort();
+
+        // let word3= text1.toString()
+        // let word4= text2.toString()
+
+        // if (word3 == word4) {
+        //     console.log("correct");
+        // }
+        // else {
+        //     console.log("not correct");
+        // }
+
+        let x= word1.split("").sort().toString();
+        let y= word2.split("").sort().toString();
+        if (x == y) {
+            console.log("correct");
+        }
+        else {
+            console.log("not correct");
+        }
+
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Root of number</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        let num =   prompt('Enter the number: ');
+        let result = Math.sqrt(num);
+        alert (`Square Root of ${num} is: ${result}`)
+        document.getElementById("display").innerHTML = `Square Root of <b>${num}</b> is: <b>${result}</b>`;
+    </script>
+</body>
+</html>

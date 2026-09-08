@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Calculator</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let tshirt = 5;
+        let tshirtPrice = 400;
+        let tshirtTotal = (tshirt * tshirtPrice)
+
+        let caps = 3;
+        let capsPrice =150;
+        let capsTotal = (caps * capsPrice);
+
+        let totalEarnings = tshirtTotal + capsTotal;
+
+        console.log (totalEarnings)
+
+        let updatedTshirtTotal = 450;
+        let updatedTotalEarnings = (updatedTshirtTotal * tshirt) + (caps * capsPrice);
+
+        console.log (updatedTotalEarnings)
+
+        document.getElementById("result").innerHTML = ("Total Earnings = " +updatedTotalEarnings  )
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Page</title>
+</head>
+<body>
+    <button onclick="returnBtn()">Check Return</button>
+    <p id="result"></p>
+
+    <script>
+        let order = {
+            itemName: "Laptop",
+            isDelivered: true,
+            daysSinceDelivery: 5
+        };
+
+        function returnBtn() {
+            let itemNameExists = "itemName" in order;
+            console.log("Does itemName exist?", itemNameExists);
+
+            let message = (order.isDelivered && order.daysSinceDelivery <= 7)? "Eligible for Return" : "Return Period Expired";
+            document.getElementById("result").textContent = message;
+
+            delete order.daysSinceDelivery;
+
+            console.log(order);
+        }
+    </script>
+
+</body>
+</html>

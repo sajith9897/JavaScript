@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+    var item1 = "Rice";
+    var item2 = "Sugar";
+    var item3 = "Wheat";
+    
+    var ricePrice = 60;
+    var sugarPrice = 50;
+    var wheatPrice = 45;
+    
+    var riceQuantity = 2;
+    var sugarQuantity = 3;
+    var wheatQuantity = 4;
+    
+    var riceCost = ricePrice * riceQuantity;
+    var sugarCost = sugarPrice * sugarQuantity;
+    var wheatCost = wheatPrice * wheatQuantity;
+    
+    var totalBill = riceCost + sugarCost + wheatCost;
+    
+    console.log("Item 1:", item1);
+    console.log("Price:", ricePrice);
+    console.log("Quantity:", riceQuantity);
+    console.log("Cost:", riceCost);
+
+    console.log("Item 2:", item2);
+    console.log("Price:", sugarPrice);
+    console.log("Quantity:", sugarQuantity);
+    console.log("Cost:", sugarCost);
+
+    console.log("Item 3:", item3);
+    console.log("Price:", wheatPrice);
+    console.log("Quantity:", wheatQuantity);
+    console.log("Cost:", wheatCost);
+
+    console.log("Total Bill:", totalBill);
+
+
+    sugarQuantity = 5;
+
+    sugarCost = sugarPrice * sugarQuantity;
+
+    totalBill = riceCost + sugarCost + wheatCost;
+
+    console.log("Updated Sugar Quantity:", sugarQuantity);
+    console.log("Updated Sugar Cost:", sugarCost);
+    console.log("Updated Total Bill:", totalBill);
+    </script>
+</body>
+</html>
