@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same last digit</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt (prompt(`Enter the first number: `));
+        let num2 = parseInt (prompt(`Enter the second number: `));
+        let num3 = parseInt (prompt(`Enter the third number: `));
+
+        let result1, result2, result3;
+
+        result1 = num1%10;
+        result2 = num2%10;
+        result3 = num3%10;
+
+        if (result1==result2 && result1==result3) {
+            console.log (`The last digit of the numbers are equal` )
+        }
+        else {
+            console.log (`The last digit of the numbers are not equal` )
+        }
+    </script>
+</body>
+</html>
