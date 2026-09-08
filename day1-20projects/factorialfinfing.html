@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseFloat(prompt(`Enter the number to find the factorial of: `));
+
+        if (num<0) {
+            alert (`Error! cannot find the factorial of a negative number.`);
+        }
+        else if (num == 0) {
+            console.log (`Factorial of 0 is 1`);
+        }
+        else {
+            let fact = 1;
+            for (let i=1; i<=num; i++) {
+                fact *= i;
+            }
+            console.log (`Factorial of ${num} is ${fact}`);
+        }
+        
+    </script>
+</body>
+</html>
