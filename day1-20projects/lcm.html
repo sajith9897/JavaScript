@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt (prompt(`Enter the first number: `));
+        let num2 = parseInt (prompt(`Enter the second number: `));
+
+        let result;
+
+        for (i=1; i<=num1*num2; i++) {
+            if (i % num1== 0 && i % num2 == 0) {
+                result=i;
+                break;
+            }
+        }
+        console.log(result)
+    </script>
+</body>
+</html>
