@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to binary</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt(`Enter the number: `));
+        let num2 = num;
+        let out="";
+
+        while (num>0) {
+            let remainder = num%2;
+            out = remainder+out;
+            num = Math.floor(num/2);
+            
+        }
+        console.log(`Binary of ${num2} = ${out}`)
+
+    </script>
+</body>
+</html>
